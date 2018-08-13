@@ -11,6 +11,8 @@ class TestActivity : AppCompatActivity() {
 
         val memeToaster = MemeToaster(this)
 
-        memeToaster.trollFace("Fek yuuu >|")
+        //memeToaster.trollFace("Fek yuuu >|")
+
+        memeToaster.toastyMeme(Memes.Ascii.TableFlip, 28F)
     }
 }

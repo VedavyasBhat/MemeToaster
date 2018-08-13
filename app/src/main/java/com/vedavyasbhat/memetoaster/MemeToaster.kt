@@ -20,11 +20,22 @@ class MemeToaster(private val context: Context) {
         toast(Memes.Images.AwwYeah, text)
     }
 
+    fun toastyMeme(ascii: String, textSize: Float = Dimensions.Text.Medium) {
+        Toast(context).apply {
+            view = TextView(context).apply {
+                this.textSize = textSize
+                this.text = ascii
+            }
+
+            show()
+        }
+    }
+
     private fun toast(
             name: String,
             text: String? = null,
-            width: Int = Dimensions.Medium,
-            height: Int = Dimensions.Medium) {
+            width: Int = Dimensions.Images.Medium,
+            height: Int = Dimensions.Images.Medium) {
         Toast(context).apply {
             view = LayoutInflater.from(context).inflate(R.layout.toast, null)
             (view.findViewById<View>(R.id.image) as ImageView).apply {
