@@ -5,20 +5,29 @@ import java.util.*
 object Memes {
 
     object Images {
-        const val Fuuu = "fuuu"
-        const val TrollFace = "trollface"
+        const val Apologetic = "apologetic"
         const val AwwYeah = "awwyeah"
+        const val Fuuu = "fuuu"
+        const val ThumbsUp = "thumbsup"
+        const val TrollFace = "trollface"
+        const val YUDoDis = "yudodis"
 
         private val nameToResourceMap = mapOf(
+                Apologetic to R.drawable.apologetic,
+                AwwYeah to R.drawable.awwyeah,
                 Fuuu to R.drawable.fuuu,
+                ThumbsUp to R.drawable.thumbsup,
                 TrollFace to R.drawable.trollface,
-                AwwYeah to R.drawable.awwyeah
+                YUDoDis to R.drawable.yudodis
         )
 
         private val nameToTextMap = mapOf(
+                Apologetic to "I'm sorryyy",
+                AwwYeah to "Yeeeeeaaaaahhh",
                 Fuuu to "Dang it",
+                ThumbsUp to "Done!",
                 TrollFace to "Lel",
-                AwwYeah to ""
+                YUDoDis to "Y U DO DIS"
         )
 
         fun resource(name: String): Int {

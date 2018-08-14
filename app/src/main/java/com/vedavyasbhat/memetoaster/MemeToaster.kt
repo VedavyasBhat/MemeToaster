@@ -8,17 +8,13 @@ import android.widget.TextView
 import android.widget.Toast
 
 class MemeToaster(private val context: Context) {
-    fun fuuu(text: String? = null) {
-        toast(Memes.Images.Fuuu)
-    }
 
-    fun trollFace(text: String? = null) {
-        toast(Memes.Images.TrollFace, text)
-    }
-
-    fun awwYeah(text: String? = null) {
-        toast(Memes.Images.AwwYeah, text)
-    }
+    fun apologetic(text: String? = null) = toast(Memes.Images.Apologetic, text)
+    fun awwYeah(text: String? = null) = toast(Memes.Images.AwwYeah, text)
+    fun fuuu(text: String? = null) = toast(Memes.Images.Fuuu, text)
+    fun thumbsUp(text: String? = null) = toast(Memes.Images.ThumbsUp, text)
+    fun trollFace(text: String? = null) = toast(Memes.Images.TrollFace, text)
+    fun yUDoDis(text: String? = null) = toast(Memes.Images.YUDoDis, text)
 
     fun toastyMeme(ascii: String, textSize: Float = Dimensions.Text.Medium) {
         Toast(context).apply {
